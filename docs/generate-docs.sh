@@ -2,11 +2,7 @@
 #
 # Set up documentation so README.md is reflected onto apollographql.com/docs/android
 
-echo -e  "---
-          title: Get started
-          description: Learn how to quickly set up Apollo Client in your Android app
-          ---
-          $(cat ../README.md | grep -v 'the official docs')" > source/essentials/get-started.md
+echo -e  "---\ntitle: Get started\ndescription: Learn how to quickly set up Apollo Client in your Android app\n---\n\n$(cat ../README.md | grep -v 'the official docs')" > source/essentials/get-started.md
 
 
 cat source/essentials/get-started.md
