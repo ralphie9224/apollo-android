@@ -2,7 +2,7 @@
 #
 # Set up documentation so README.md is reflected onto apollographql.com/docs/android
 
-echo -e  "---\ntitle: Get started\ndescription:\n---\n$(cat README.md | grep -v 'the official docs')" > source/essentials/get-started.md
+echo -e  "---\ntitle: Get started\ndescription:\n---\n$(cat ../README.md | grep -v 'the official docs')" > source/essentials/get-started.md
 
 cat source/essentials/get-started.md
 
