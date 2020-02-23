@@ -4,6 +4,8 @@
 
 echo -e  "---\ntitle: Get started\ndescription:\n---\n$(cat README.md | grep -v 'the official docs')" > source/essentials/get-started.md
 
+cat source/essentials/get-started.md
+
 gatsby build --prefix-paths
 mkdir -p docs/android
 mv public/* docs/android
